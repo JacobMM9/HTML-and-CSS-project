@@ -1,0 +1,15 @@
+p {
+	color: DarkGreen;
+	background-color: DarkGrey;
+	font-size: medium;
+	text-align: center;
+}
+h1 {
+	text-shadow: -5px 5px 5px;
+}
+h2 {
+	color: orange;
+	text-shadow: 1px 1px 10px yellow;
+	font-size: large;
+	text-align: center;
+}
