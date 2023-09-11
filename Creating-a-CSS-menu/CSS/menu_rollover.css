@@ -52,6 +52,9 @@ body {
     visibility: visible;
 }
 
+/* this will put the sub menu inside the menu with out the next
+line of code it would be showing all the time */
+
 .submenu {
     padding: 0;
     left: 0;
@@ -59,12 +62,18 @@ body {
     top: 43.5px;
     width: 125.5px;
     opacity: 0;
-    /*while not being hovered, drop down menu hides
-    this also aboids a block level bug */
+    /*opacity effects while not being hovered, drop down menu 
+    hides this also aboids a block level bug */
     visibility: hidden;
 }
 
 .submenu li {
     background-color: #387593;
+    display: block;
+    color: #B3B3B3;
+}
 
+.submenu li:hover {
+    color: #fff;
+    background-color: #5EAFDF;
 }
