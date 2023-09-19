@@ -1,0 +1,43 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    filter: opacity(60%);
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.top_middle {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+th {
+    padding: 5px;
+}
+
+.top_row {
+    background-color: brown;
+}
+
