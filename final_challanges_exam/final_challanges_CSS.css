@@ -2,18 +2,54 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 
-img {
-    filter: opacity(60%);
+.img-cont {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid black;
     border-radius: 15px;
 }
 
+img {
+    filter: opacity(60%);
+    width: 100%;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
 .container {
     position: relative;
     text-align: center;
+    width: 100%;
 }
 
 .top_middle {
@@ -26,6 +62,11 @@ img {
 footer {
     text-align: center;
     font-weight: bold;
+}
+
+table {
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 table, th, td {
@@ -41,3 +82,68 @@ th {
     background-color: brown;
 }
 
+/*nav section */
+
+nav {
+    background-color: black;
+    border: 2px solid white;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav a {
+    color: white;
+    padding: 10px 8px;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: gray;
+    color: black;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    padding: 10px;
+    height: 80px;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+.column h2 {
+    color: rgb(212, 194, 30);
+}
+
+p:hover {
+    background-color: orange;
+    font-weight: bold;
+}
+
+/* video and video text */
+
+.vid-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.vid-text {
+    color: rgb(224, 9, 9);
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

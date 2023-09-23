@@ -7,19 +7,47 @@
 	</head>
 	<body>
 
-		<div class="container">
-			<img src="../dog-picture.jpg" alt="Dog Picture" class="center">
-            <div class="top_middle">Look at this guy!</div>
-		</div>
+        <!-- NAV BAR-->
+        <nav>
+            <div class="nav-box">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Column -->
+        <div class="row" id="home">
+            <div class="column" style="background-color: rgb(206, 53, 53);">
+                <h2>This is my page of all final challanges.</h2>
+            </div>
+            <div class="column" style="background-color: rgb(10, 170, 117);">
+                <h2>The faded puppie is excited to greet you!</h2>
+            </div>
+        </div>
+
+        <p>The overall movement of pet ownership is quite surprising, looking at the
+            statistics show an overall growth yet not always proportionate to the population.
+        </p>
 
 
-        <footer>
-            <p>This is my footer | &copy; </p>
-        </footer>
+
+        <!--  IMG SECTION -->
+		<div class="img-cont">
+            <div class="container">
+                <img src="../dog-picture.jpg" alt="Dog Picture" class="center">
+                <div class="top_middle">Look at this guy!</div>
+                <div class="overlay">
+                    <div class="text">Hello everyone!</div>
+                </div>
+            </div>
+        </div>
 
 
+
+        <!-- TABLE SECTION -->
         <table>
-        <div>
+        <div id="about">
             <tr class="top_row">
                 <th>Dogs</th>
                 <th>Not Fluffy, Medium Fluffy or Super Fluffy</th>
@@ -44,6 +72,23 @@
         </table>
 
 
+        <!-- VIDEO CLIP -->
+
+        <h1>Here is a dog video!</h1>
+        <div class="vid-container">
+            <video autoplay muted loop width="800" height="400" controls>
+                <source src="snow-dog.mp4" type="video/mp4">
+            </video>
+                <div class="vid-text">Look at all of these good guys!</div>
+            
+        </div>
+
+        <!-- FOOTER -->
+        <div id="contact">
+            <footer>
+                <p>This is my footer | &copy; </p>
+            </footer>
+        </div>
 
 
 	</body>
